@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- =====BOX ICONS===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- email submition
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/integration
+        emailjs.init("user_gPcKdq1hcnEmPMYX5oekb");
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            // generate a five digit number for the contact_number variable
+            this.name.value = (Math.random() * 100000) | 0;
+            // these IDs from the previous steps
+            emailjs.sendForm("contact_service", "contact_form", this).then(
+              function () {
+                alert("SUCCESS!");
+              },
+              function (error) {
+                alert("FAILED...", error);
+              }
+            );
+          });
+      };
+    </script> -->
+
+    <title>Portfolio website - Nizar</title>
+  </head>
+  <body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo">Muhamad nizar</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Hi,<br />I'am <span class="home__title-color">Nizar</span> a<br />
+            Junior Programmer
+          </h1>
+
+          <a
+            href="https://drive.google.com/file/d/1GiCRLwBTpDW4Q5zHJyPNhCpw1NoyFIlz/view?usp=sharing"
+            class="button"
+            >Download CV</a
+          >
+        </div>
+
+        <div class="home__social">
+          <a
+            href="https://instagram.com/niizar.id"
+            target="_blank"
+            class="home__social-icon"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a
+            href="https://github.com/nizar-sys"
+            target="_blank"
+            class="home__social-icon"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </div>
+
+        <div class="home__img">
+          <!-- <img src="assets/img/prof1.jpeg" alt="" /> -->
+        </div>
+      </section>
+
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="assets/img/prof1.jpeg" alt="" />
+          </div>
+
+          <div>
+            <h2 class="about__subtitle">I'am Muhamad nizar</h2>
+            <p class="about__text">
+              I am a student who is currently studying at the Software
+              Engineering Vocational High School at SMK Wikrama Bogor, I live in
+              the city of Bogor, wast Java. Being a software engineer is my
+              dream. Currently, I am focused on learning programming languages
+              to achieve my desired goals.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills__container bd-grid">
+          <div>
+            <h2 class="skills__subtitle">Profesional Skills</h2>
+            <p class="skills__text">
+              Of course, to achieve this goal, I have skills that I will
+              continue to develop so that my dreams can be fulfilled
+            </p>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx skills__icon"></i>
+                <span class="skills__name">HTML5</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+              <div>
+                <span class="skills__percentage">80%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx skills__icon"></i>
+                <span class="skills__name">Python</span>
+              </div>
+              <div class="skills__bar skills__css"></div>
+              <div>
+                <span class="skills__percentage">70%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx skills__icon"></i>
+                <span class="skills__name">Flutter</span>
+              </div>
+              <div class="skills__bar skills__js"></div>
+              <div>
+                <span class="skills__percentage">45%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx skills__icon"></i>
+                <span class="skills__name">PHP</span>
+              </div>
+              <div class="skills__bar skills__ux"></div>
+              <div>
+                <span class="skills__percentage">85%</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img src="assets/img/work.png" alt="" class="skills__img" />
+          </div>
+        </div>
+      </section>
+
+      <!--===== WORK =====-->
+      <section class="work section" id="work">
+        <h2 class="section-title">Work</h2>
+
+        <div class="work__container bd-grid">
+          <div class="work__img">
+            <img src="assets/img/work.png" alt="" />
+          </div>
+          <div class="work__img">
+            <img src="assets/img/work1.png" alt="" />
+          </div>
+          <div class="work__img">
+            <img src="assets/img/work3.png" alt="" />
+          </div>
+          <div class="work__img">
+            <img src="assets/img/work4.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!--===== CONTACT =====-->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact__container bd-grid">
+          <form method="POST" class="contact__form" id="contact-form">
+            <input
+              type="text"
+              placeholder="Name"
+              class="contact__input"
+              id="name"
+              name="name"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              class="contact__input"
+              id="email"
+              name="email"
+            />
+            <textarea
+              type="text"
+              name="message"
+              placeholder="Pesan..."
+              id="message"
+              cols="0"
+              rows="10"
+              class="contact__input"
+            ></textarea>
+            <input type="submit" value="Send" class="contact__button button" />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+      <p class="footer__title">Muhamad Nizar</p>
+      <div class="footer__social">
+        <a href="https://instagram.com/niizar.id" class="footer__icon"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+        <a href="https://twitter.com/jokiicode" class="footer__icon"
+          ><i class="bx bxl-twitter"></i
+        ></a>
+      </div>
+      <p>&#169; 2020 copyright all right reserved</p>
+    </footer>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+
+    <!-- sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.all.min.js"></script>
+  </body>
+</html>
