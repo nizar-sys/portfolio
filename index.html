@@ -12,37 +12,6 @@
       rel="stylesheet"
     />
 
-    <!-- email submition
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        // https://dashboard.emailjs.com/admin/integration
-        emailjs.init("user_gPcKdq1hcnEmPMYX5oekb");
-      })();
-    </script>
-    <script type="text/javascript">
-      window.onload = function () {
-        document
-          .getElementById("contact-form")
-          .addEventListener("submit", function (event) {
-            event.preventDefault();
-            // generate a five digit number for the contact_number variable
-            this.name.value = (Math.random() * 100000) | 0;
-            // these IDs from the previous steps
-            emailjs.sendForm("contact_service", "contact_form", this).then(
-              function () {
-                alert("SUCCESS!");
-              },
-              function (error) {
-                alert("FAILED...", error);
-              }
-            );
-          });
-      };
-    </script> -->
 
     <title>Portfolio website - Nizar</title>
   </head>
@@ -152,16 +121,6 @@
             <div class="skills__data">
               <div class="skills__names">
                 <i class="bx skills__icon"></i>
-                <span class="skills__name">HTML5</span>
-              </div>
-              <div class="skills__bar skills__html"></div>
-              <div>
-                <span class="skills__percentage">80%</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx skills__icon"></i>
                 <span class="skills__name">Python</span>
               </div>
               <div class="skills__bar skills__css"></div>
@@ -172,11 +131,11 @@
             <div class="skills__data">
               <div class="skills__names">
                 <i class="bx skills__icon"></i>
-                <span class="skills__name">Flutter</span>
+                <span class="skills__name">JavaScript</span>
               </div>
               <div class="skills__bar skills__js"></div>
               <div>
-                <span class="skills__percentage">45%</span>
+                <span class="skills__percentage">70%%</span>
               </div>
             </div>
             <div class="skills__data">
@@ -190,29 +149,23 @@
               </div>
             </div>
           </div>
-
-          <div>
-            <img src="assets/img/work.png" alt="" class="skills__img" />
-          </div>
         </div>
       </section>
 
       <!--===== WORK =====-->
       <section class="work section" id="work">
-        <h2 class="section-title">Work</h2>
+        <h2 class="section-title">Projects</h2>
 
         <div class="work__container bd-grid">
           <div class="work__img">
-            <img src="assets/img/work.png" alt="" />
+            <a href="https://ninime.vercel.app/" target="_blank">
+              <img src="assets/img/ninime.png" title="Web Anime Downloader">
+            </a>
           </div>
           <div class="work__img">
-            <img src="assets/img/work1.png" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="assets/img/work3.png" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="assets/img/work4.png" alt="" />
+            <a href="https://ninime-github-io.vercel.app/" target="_blank">
+              <img src="assets/img/ninime2.png" title="Web Anime Streaming">
+            </a>
           </div>
         </div>
       </section>

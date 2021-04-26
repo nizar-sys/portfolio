@@ -289,13 +289,13 @@ img{
   z-index: var(--z-back);
 }
 .skills__html{
-  width: 95%;
+  width: 80%;
 }
 .skills__css{
-  width: 85%;
+  width: 70%;
 }
 .skills__js{
-  width: 65%;
+  width: 70%;
 }
 .skills__ux{
   width: 85%;
