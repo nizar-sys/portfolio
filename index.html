@@ -1,278 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Muhamad Nizar | Portofolio</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-    <!-- =====BOX ICONS===== -->
+    <link href="./assets/img/favicon.png" rel="icon" />
+    <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
     <link
-      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
       rel="stylesheet"
     />
 
-    <title>Portfolio website - Nizar</title>
-  </head>
-  <body>
-    <!--===== HEADER =====-->
-    <header class="l-header">
-      <nav class="nav bd-grid">
-        <div>
-          <a href="#" class="nav__logo">Muhamad nizar</a>
-        </div>
+    <link href="./assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="./assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="./assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="./assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="./assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link
+      href="./assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">Skills</a>
-            </li>
-            <li class="nav__item">
-              <a href="#work" class="nav__link">Projects</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <script src="https://unpkg.com/typify.js@1.1.9/dist/typify.min.js"></script>
+  </head>
+
+  <body id="app">
+    <header id="header" class="header">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-between"
+      >
+        <a :href="'/'" class="logo d-flex align-items-center">
+          <img src="assets/img/logo.png" alt="" />
+          <span>{{ appName }}</span>
+        </a>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li v-for="(link, index) in footer.useFulLinks" :key="index">
+              <a :class="'nav-link scrollto' + (index === 0 ? ' active' : '')" :href="link.url">{{ link.name }}</a>
+            </li>            
+            <li>
+              <a class="getstarted scrollto" href="#about">"Who am I?"</a>
             </li>
           </ul>
-        </div>
-
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-menu"></i>
-        </div>
-      </nav>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+      </div>
     </header>
 
-    <main class="l-main">
-      <!--===== HOME =====-->
-      <section class="home bd-grid" id="home">
-        <div class="home__data">
-          <h1 class="home__title">
-            Hi,<br />I'am <span class="home__title-color">Nizar</span> a<br />
-            Junior Programmer
-          </h1>
-
-          <a
-            href="./assets/muhamad-nizar-cv.pdf"
-            class="button"
-            target="_blank"
-            >Download CV</a
+    <section id="hero" class="hero d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <h3
+              class="wow fadeInUp"
+              data-wow-delay="0.2s"
+              id="typer-title"
+            ></h3>
+            <h1 data-aos="fade-up">{{ greeting.title }}</h1>
+            <h2 data-aos="fade-up" data-aos-delay="400">
+              {{ greeting.subtitle }}
+            </h2>
+            <div data-aos="fade-up" data-aos-delay="600">
+              <div class="text-center text-lg-start">
+                <a
+                  :href="greeting.btnUrl"
+                  class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center"
+                >
+                  <span>{{ greeting.btnText }}</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 hero-img"
+            data-aos="zoom-out"
+            data-aos-delay="200"
           >
-        </div>
-
-        <div class="home__social">
-          <a
-            href="https://instagram.com/emnizaar"
-            target="_blank"
-            class="home__social-icon"
-            ><i class="bx bxl-instagram"></i
-          ></a>
-          <a
-            href="https://github.com/nizar-sys"
-            target="_blank"
-            class="home__social-icon"
-            ><i class="bx bxl-github"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/emnizar"
-            target="_blank"
-            class="home__social-icon"
-            ><i class='bx bxl-linkedin-square'></i></a>
-        </div>
-
-        <div class="home__img">
-          <!-- <img src="assets/img/prof1.jpeg" alt="" /> -->
-        </div>
-      </section>
-
-      <!--===== ABOUT =====-->
-      <section class="about section" id="about">
-        <h2 class="section-title">About</h2>
-
-        <div class="about__container bd-grid">
-          <div class="about__img">
-            <img src="assets/img/prof1.jpeg" alt="" />
-          </div>
-
-          <div>
-            <h2 class="about__subtitle">I'am Muhamad nizar</h2>
-            <p class="about__text">
-              I am a student who is currently studying at the Software
-              Engineering Vocational High School at SMK Wikrama Bogor, I live in
-              the city of Bogor, west Java. Being a software engineer is my
-              dream. Currently, I am focused on learning programming languages
-              to achieve my desired goals.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!--===== SKILLS =====-->
-      <section class="skills section" id="skills">
-        <h2 class="section-title">Skills</h2>
-
-        <div class="skills__container bd-grid">
-          <div>
-            <h2 class="skills__subtitle">Profesional Skills</h2>
-            <p class="skills__text">
-              Of course, to achieve this goal, I have skills that I will
-              continue to develop so that my dreams can be fulfilled
-            </p>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx skills__icon"></i>
-                <span class="skills__name">HTML, CSS, Javascript</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx skills__icon"></i>
-                <span class="skills__name">React JS</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx skills__icon"></i>
-                <span class="skills__name">Laravel Framework</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx skills__icon"></i>
-                <span class="skills__name">PHP</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx skills__icon"></i>
-                <span class="skills__name">MySql</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx skills__icon"></i>
-                <span class="skills__name">Vue JS</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--===== WORK =====-->
-      <section class="work section" id="work">
-        <h2 class="section-title">Projects</h2>
-
-        <div class="work__container bd-grid">
-          <div class="work__img">
-            <a href="https://ninime.vercel.app/" target="_blank">
-              <img src="assets/img/ninime.png" title="Web Anime Downloader" />
-            </a>
-          </div>
-
-          <div class="work__img">
-            <a href="https://ninime-github-io.vercel.app/" target="_blank">
-              <img src="assets/img/ninime2.png" title="Web Anime Streaming" />
-            </a>
-          </div>
-
-          <div class="work__img">
-            <a href="http://si-ajar.herokuapp.com/" target="_blank">
-              <img src="assets/img/si-ajar.png" title="Sistem Ajar Online" />
-            </a>
-          </div>
-
-          <div class="work__img">
-            <a href="http://api-barbers.unaux.com/" target="_blank">
-              <img
-                src="assets/img/barbershop.png"
-                title="Sistem Booking Barbershop Online"
-              />
-            </a>
-          </div>
-          
-          <div class="work__img">
-            <a href="https://sipos.herokuapp.com/" target="_blank">
-              <img
-                src="assets/img/sipos.png"
-                title="Sistem Point Of Sales"
-              />
-            </a>
-          </div>
-
-          <!-- <div class="work__img"> -->
-            <h3 class="text-center">Show More <a href="https://github.com/nizar-sys?tab=repositories" target="_blank">Projects On Github</a></h3>
-          <!-- </div> -->
-        </div>
-      </section>
-
-      <!--===== CONTACT =====-->
-      <section class="contact section" id="contact">
-        <h2 class="section-title">Contact</h2>
-
-        <div class="contact__container bd-grid">
-          <form method="POST" class="contact__form" id="contact-form">
-            <input
-              type="text"
-              placeholder="Name"
-              class="contact__input"
-              id="name"
-              name="name"
+            <img
+              :src="greeting.image"
+              style="width: 400px; height: auto"
+              class="img-fluid"
+              alt=""
             />
-            <input
-              type="email"
-              placeholder="Email"
-              class="contact__input"
-              id="email"
-              name="email"
-            />
-            <textarea
-              type="text"
-              name="message"
-              placeholder="Pesan..."
-              id="message"
-              cols="0"
-              rows="10"
-              class="contact__input"
-            ></textarea>
-            <input type="submit" value="Send" class="contact__button button" />
-          </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main id="main">
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="row gx-0">
+            <div
+              class="col-lg-6 d-flex flex-column justify-content-center"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="content">
+                <h2>
+                  {{ about.title }}
+                </h2>
+                <span v-html="about.description"></span>
+                <div class="text-center text-lg-start">
+                  <a
+                  :href="about.resume"
+                  target="__blank"
+                    class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center"
+                  >
+                    <span>Read More</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+  
+            <div
+              class="col-lg-6 d-flex align-items-center"
+              data-aos="zoom-out"
+              data-aos-delay="200"
+            >
+              <img :src="about.image" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="services">
+        <div class="container" data-aos="fade-up">
+          <header class="section-header">
+            <h2>{{services.title}}</h2>
+            <p>{{services.description}}</p>
+          </header>
+  
+          <div class="row gy-4">
+            <div
+              v-for="service in services.services_item"
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div :class="'service-box ' + service.color">
+                <i class="ri-discuss-line icon"></i>
+                <h3>{{service.title}}</h3>
+                <p>
+                  {{service.description}}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="portfolio">
+        <div class="container" data-aos="fade-up">
+          <header class="section-header">
+            <h2>{{portofolio.title}}</h2>
+            <p>{{portofolio.description}}</p>
+          </header>
+  
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-12 d-flex justify-content-center">
+                  <ul id="portfolio-flters">
+                      <li data-filter="*" class="filter-active">All</li>
+                      <li v-for="categories in portofolio.categories" :data-filter="'.filter-' + categories.slug">{{ categories.name }}</li>
+                  </ul>
+              </div>
+          </div>
+        
+  
+          <div
+            class="row gy-4 portfolio-container"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div v-for="portofolio in portofolio.items" :class="'col-lg-4 col-md-6 portfolio-item filter-' + portofolio.category.slug">
+              <div class="portfolio-wrap">
+                <img
+                  :src="portofolio.image"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>{{ portofolio.title }}</h4>
+                  <p>{{ portofolio.description }}</p>
+                  <div class="portfolio-links">
+                    <a
+                      :href="portofolio.image"
+                      target="_blank"
+                      data-gallery="portfolioGallery"
+                      class="portfokio-lightbox"
+                      title="{{ portofolio.title }}"
+                      ><i class="bi bi-plus"></i
+                    ></a>
+                    <a :href="portofolio.website" title="More Details" target="_blank"
+                      ><i class="bi bi-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+          <header class="section-header">
+            <h2>Contact</h2>
+            <p>Contact Us</p>
+          </header>
+  
+          <div class="row gy-4">
+            <div class="col-lg-6">
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <div class="info-box">
+                    <i class="bi bi-geo-alt"></i>
+                    <h3>Address</h3>
+                    <p>{{ footer.contact.address }}</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="info-box">
+                    <i class="bi bi-telephone"></i>
+                    <h3>Call Us</h3>
+                    <p>{{ footer.contact.phone }}</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="info-box">
+                    <i class="bi bi-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>{{ footer.contact.email }}</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="info-box">
+                    <i class="bi bi-clock"></i>
+                    <h3>Open Hours</h3>
+                    <p>Monday - Friday<br />9:00AM - 05:00PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-6">
+              <form
+                action="#"
+                method="post"
+                class="php-email-form"
+                @submit.prevent="sendEmail"
+              >
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+  
+                  <div class="col-md-6">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+  
+                  <div class="col-md-12">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="subject"
+                      placeholder="Subject"
+                      required
+                    />
+                  </div>
+  
+                  <div class="col-md-12">
+                    <textarea
+                      class="form-control"
+                      name="message"
+                      rows="6"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>
+  
+                  <div class="col-md-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">
+                      Your message has been sent. Thank you!
+                    </div>
+  
+                    <button type="submit">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
-    <!--===== FOOTER =====-->
-    <footer class="footer">
-      <p class="footer__title">Muhamad Nizar</p>
-      <div class="footer__social">
-        <a href="https://instagram.com/emnizaar" class="footer__icon"
-          ><i class="bx bxl-instagram"></i
-        ></a>
-        <a href="https://twitter.com/jokiicodev2" class="footer__icon"
-          ><i class="bx bxl-twitter"></i
-        ></a>
+    <footer id="footer" class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-5 col-md-12 footer-info">
+              <a href="" class="logo d-flex align-items-center">
+                <img src="assets/img/logo.png" alt="" />
+                <span>{{ appName }}</span>
+              </a>
+              <p>{{ footer.info }}</p>
+              <div class="social-links mt-3">
+                <a
+                  v-for="icon in footer.icons"
+                  :href="icon.url"
+                  :class="icon.icon_bi"
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li v-for="link in footer.useFulLinks">
+                  <i class="bi bi-chevron-right"></i> <a :href="link.url">{{ link.name }}</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Help</h4>
+              <ul>
+                <li v-for="link in footer.helpLinks">
+                  <i class="bi bi-chevron-right"></i> <a :href="link.url">{{ link.name }}</a>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
+            >
+              <h4>Contact Us</h4>
+              <p>
+                <div v-html="footer.contact.address.replace(/,/g, '<br/>')"></div>
+                <strong>Phone:</strong> {{ footer.contact.phone }}<br />
+                <strong>Email:</strong> {{ footer.contact.email }}<br />
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <p>&#169; 2020 copyright all right reserved</p>
+
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright
+          <strong><span>{{ footer.copyRight }}</span></strong> {{ new
+          Date().getFullYear() }}. All Rights Reserved
+        </div>
+        <div class="credits">
+          <a href="">{{ footer.powered_by }}</a>
+        </div>
+      </div>
     </footer>
 
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-    <!-- Jquery -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
+    <script src="./assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="./assets/vendor/aos/aos.js"></script>
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="./assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/vendor/php-email-form/validate.js"></script>
 
-    <!--===== MAIN JS =====-->
-    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
 
-    <!-- sweetalert -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.all.min.js"></script>
+    <script type="module" src="./assets/js/script.js"></script>
   </body>
 </html>

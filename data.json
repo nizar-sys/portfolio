@@ -1,0 +1,325 @@
+{
+  "status": "success",
+  "data": {
+    "typer_title": [
+      {
+        "id": 1,
+        "title": "Hi, I'm"
+      },
+      {
+        "id": 2,
+        "title": "Next-Gen Software Engineer"
+      }
+    ],
+    "hero": {
+      "id": 1,
+      "title": "Muhamad Nizar",
+      "sub_title": "I'm a Full Stack Software Engineer specializing in building web and mobile applications that offer memorable user experiences",
+      "btn_text": "''Who am I?''",
+      "btn_url": "#about",
+      "image": "/assets/img/prof1.jpeg",
+      "created_at": "2024-03-14T05:22:32.000000Z",
+      "updated_at": "2024-03-27T17:43:07.000000Z",
+      "image_path": "/assets/img/prof1.jpeg"
+    },
+    "about_me": {
+      "id": 1,
+      "title": "''Who am I?''",
+      "description": "<p>I am a Full Stack Software Engineer, I specialize in developing web and mobile applications that provide engaging and memorable user experiences. My expertise encompasses the entire software development lifecycle, from concept through deployment, ensuring robust, scalable solutions tailored to meet diverse client needs. I am proficient in a broad range of technologies within the fields of web development and mobile app creation.</p>",
+      "image": "#",
+      "resume": "/assets/muhamad-nizar-cv.pdf",
+      "created_at": "2024-03-14T05:23:10.000000Z",
+      "updated_at": "2024-03-14T05:23:10.000000Z",
+      "image_url": "#",
+      "resume_url": "/assets/muhamad-nizar-cv.pdf"
+    },
+    "footer_info": {
+      "info": "I am a Full Stack Software Engineer, I specialize in developing web and mobile applications that provide engaging and memorable user experiences. My expertise encompasses the entire software development lifecycle, from concept through deployment, ensuring robust, scalable solutions tailored to meet diverse client needs. I am proficient in a broad range of technologies within the fields of web development and mobile app creation.",
+      "copy_right": "Muhamad Nizar",
+      "powered_by": "Powered by Muhamad Nizar"
+    },
+    "footer_icons": [
+      {
+        "icon": "fab fa-gitlab",
+        "url": "https://gitlab.com/nizar-sys",
+        "icon_bi": "bi bi-gitlab"
+      },
+      {
+        "icon": "fab fa-github",
+        "url": "https://github.com/nizar-sys",
+        "icon_bi": "bi bi-github"
+      },
+      {
+        "icon": "fab fa-linkedin",
+        "url": "https://www.linkedin.com/in/emnizaar/",
+        "icon_bi": "bi bi-linkedin"
+      },
+      {
+        "icon": "fab fa-facebook",
+        "url": "https://www.facebook.com/niizar.id/",
+        "icon_bi": "bi bi-facebook"
+      },
+      {
+        "icon": "fab fa-twitter",
+        "url": "https://twitter.com/jokiicodev2",
+        "icon_bi": "bi bi-twitter"
+      },
+      {
+        "icon": "fab fa-instagram",
+        "url": "https://www.instagram.com/emnizaar",
+        "icon_bi": "bi bi-instagram"
+      }
+    ],
+    "footer_useful_links": [
+      {
+        "name": "Home",
+        "url": "#hero"
+      },
+      {
+        "name": "About",
+        "url": "#about"
+      },
+      {
+        "name": "Services",
+        "url": "#services"
+      },
+      {
+        "name": "Portfolio",
+        "url": "#portfolio"
+      },
+      {
+        "name": "Contact",
+        "url": "#contact"
+      }
+    ],
+    "footer_contact": {
+      "address": "Bogor 16139, West Java, Indonesia",
+      "phone": "+62 8111804436",
+      "email": "nizarid04@gmail.com"
+    },
+    "footer_help_links": [
+      {
+        "name": "Whatsapp",
+        "url": "https://wa.me/6282124721853?text=Hello%20Nizar,%20I%20want%20to%20ask%20about%20your%20services"
+      },
+      {
+        "name": "Email",
+        "url": "mailto:nizarid04@gmail.com"
+      }
+    ],
+    "services": {
+      "title": "What I Offer",
+      "description": "Discover tailored expert solutions that meet your specific needs.",
+      "services_item": [
+        {
+          "id": 1,
+          "title": "Web Development",
+          "description": "Experience bespoke web solutions crafted to elevate your online presence. I provide comprehensive services from design to deployment, ensuring your site is both powerful and user-friendly.",
+          "color": "red"
+        },
+        {
+          "id": 2,
+          "title": "Consultant Web Apps",
+          "description": "Receive personalized consulting on web app development for a seamless digital experience. I cover all phases of development, helping you achieve functional and engaging applications.",
+          "color": "blue"
+        },
+        {
+          "id": 3,
+          "title": "Hosting Website & Maintenance",
+          "description": "Ensure your website's reliability with my hosting and maintenance services. I offer continuous monitoring and proactive support to keep your site performing at its best.",
+          "color": "green"
+        },
+        {
+          "id": 4,
+          "title": "Error Solving",
+          "description": "Rely on me to quickly address and resolve any operational issues. My focused approach identifies and fixes problems, ensuring minimal downtime and optimal performance.",
+          "color": "green"
+        },
+        {
+          "id": 5,
+          "title": "Student Task Assistance",
+          "description": "Get expert support for your academic projects. I provide personalized assistance to help you complete assignments effectively, ensuring your academic progress.",
+          "color": "orange"
+        }
+      ]
+    },
+    "portofolio": {
+      "title": "Portfolio",
+      "description": "Recent Works",
+      "categories": [
+        {
+          "id": 1,
+          "name": "Web Application",
+          "slug": "web-application"
+        },
+        {
+          "id": 2,
+          "name": "Mobile Application",
+          "slug": "mobile-application"
+        }
+      ],
+      "items": [
+        {
+          "id": 1,
+          "image": "/assets/img/portfolio/irab.jpeg",
+          "title": "System Academic",
+          "category_id": 1,
+          "description": "Certification App",
+          "client": "unknown",
+          "website": "/assets/img/detail-portos/poster-irab.pdf",
+          "category": {
+            "id": 1,
+            "name": "Web Application",
+            "slug": "web-application",
+            "created_at": "2024-04-13T14:07:21.000000Z",
+            "updated_at": "2024-04-13T14:07:21.000000Z"
+          }
+        },
+        {
+          "id": 2,
+          "image": "/assets/img/portfolio/mawapres.jpeg",
+          "title": "System Academic",
+          "category_id": 1,
+          "description": "Goods Data Collection",
+          "client": "unknown",
+          "website": "/assets/img/detail-portos/poster-mawapres.pdf",
+          "category": {
+            "id": 2,
+            "name": "Web Application",
+            "slug": "web-application",
+            "created_at": "2024-04-13T14:07:21.000000Z",
+            "updated_at": "2024-04-13T14:07:21.000000Z"
+          }
+        },
+        {
+          "id": 3,
+          "image": "/assets/img/portfolio/cv-maker.jpeg",
+          "title": "System Academic",
+          "category_id": 1,
+          "description": "CV Maker",
+          "client": "unknown",
+          "website": "/assets/img/detail-portos/CV-MAKER.pdf",
+          "category": {
+            "id": 3,
+            "name": "Web Application",
+            "slug": "web-application",
+            "created_at": "2024-04-13T14:07:21.000000Z",
+            "updated_at": "2024-04-13T14:07:21.000000Z"
+          }
+        },
+        {
+          "id": 4,
+          "image": "/assets/img/portfolio/pengaduan-masyarakat.jpeg",
+          "title": "Mobile Applications",
+          "category_id": 2,
+          "description": "Public Complaints App",
+          "client": "unknown",
+          "website": "/assets/img/detail-portos/poster-pengaduan-masyarakat.pdf",
+          "category": {
+            "id": 4,
+            "name": "Mobile Application",
+            "slug": "mobile-application",
+            "created_at": "2024-04-13T14:07:21.000000Z",
+            "updated_at": "2024-04-13T14:07:21.000000Z"
+          }
+        },
+        {
+          "id": 5,
+          "image": "/assets/img/portfolio/kph-getah.jpeg",
+          "title": "System Academic",
+          "category_id": 1,
+          "description": "Plant Monitoring",
+          "client": "unknown",
+          "website": "/assets/img/detail-portos/poster-kph-getah.pdf",
+          "category": {
+            "id": 5,
+            "name": "Web Application",
+            "slug": "web-application",
+            "created_at": "2024-04-13T14:07:21.000000Z",
+            "updated_at": "2024-04-13T14:07:21.000000Z"
+          }
+        },
+        {
+          "id": 6,
+          "image": "/assets/img/portfolio/one-supporting-system.jpeg",
+          "title": "Local Government Services",
+          "category_id": 1,
+          "description": "Monitoring Regional Electional Data",
+          "client": "unknown",
+          "website": "/assets/img/detail-portos/poster-onesupporting.pdf",
+          "category": {
+            "id": 6,
+            "name": "Web Application",
+            "slug": "web-application",
+            "created_at": "2024-04-13T14:07:21.000000Z",
+            "updated_at": "2024-04-13T14:07:21.000000Z"
+          }
+        },
+        {
+          "id": 7,
+          "image": "/assets/img/portfolio/plane-ticketing.png",
+          "title": "Mobile Applications",
+          "category_id": 2,
+          "description": "Plane Ticketing App",
+          "client": "unknown",
+          "website": "/assets/img/detail-portos/poster-plane-ticketing.pdf",
+          "category": {
+            "id": 7,
+            "name": "Web Application",
+            "slug": "web-application",
+            "created_at": "2024-04-13T14:07:21.000000Z",
+            "updated_at": "2024-04-13T14:07:21.000000Z"
+          }
+        },
+        {
+          "id": 8,
+          "image": "/assets/img/portfolio/sistem-diagnosa-penyakit.jpeg",
+          "title": "Mobile Applications",
+          "category_id": 2,
+          "description": "Disease Diagnosis System",
+          "client": "unknown",
+          "website": "/assets/img/detail-portos/poster-sistem-diagnosa-penyakit.pdf",
+          "category": {
+            "id": 8,
+            "name": "Web Application",
+            "slug": "web-application",
+            "created_at": "2024-04-13T14:07:21.000000Z",
+            "updated_at": "2024-04-13T14:07:21.000000Z"
+          }
+        },
+        {
+          "id": 9,
+          "image": "/assets/img/portfolio/tps-app.jpeg",
+          "title": "System Academic",
+          "category_id": 1,
+          "description": "Polling Place Data",
+          "client": "unknown",
+          "website": "/assets/img/detail-portos/poster-tps-app.pdf",
+          "category": {
+            "id": 9,
+            "name": "Web Application",
+            "slug": "web-application",
+            "created_at": "2024-04-13T14:07:21.000000Z",
+            "updated_at": "2024-04-13T14:07:21.000000Z"
+          }
+        },
+        {
+          "id": 10,
+          "image": "/assets/img/portfolio/pendataan-barang.jpeg",
+          "title": "System Academic",
+          "category_id": 1,
+          "description": "Inventory",
+          "client": "unknown",
+          "website": "/assets/img/detail-portos/poster-ecom-test.pdf",
+          "category": {
+            "id": 10,
+            "name": "Web Application",
+            "slug": "web-application",
+            "created_at": "2024-04-13T14:07:21.000000Z",
+            "updated_at": "2024-04-13T14:07:21.000000Z"
+          }
+        }
+      ]
+    }
+  }
+}
