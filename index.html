@@ -55,7 +55,7 @@
               <a :class="'nav-link scrollto' + (index === 0 ? ' active' : '')" :href="link.url">{{ link.name }}</a>
             </li>            
             <li>
-              <a class="getstarted scrollto" href="#about">"Who am I?"</a>
+              <a class="getstarted scrollto" :href="greeting.btnUrl">"Who am I?"</a>
             </li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
