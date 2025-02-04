@@ -31,7 +31,7 @@
       "created_at": "2024-03-14T05:23:10.000000Z",
       "updated_at": "2024-03-14T05:23:10.000000Z",
       "image_url": "#",
-      "resume_url": "/assets/muhamad-nizar-cv.pdf"
+      "resume_url": "https://www.cake.me/pdf/s--_99FBWDRnRcmYNPRoMcrOA--/M6JDod.pdf"
     },
     "footer_info": {
       "info": "I am a Full Stack Software Engineer, I specialize in developing web and mobile applications that provide engaging and memorable user experiences. My expertise encompasses the entire software development lifecycle, from concept through deployment, ensuring robust, scalable solutions tailored to meet diverse client needs. I am proficient in a broad range of technologies within the fields of web development and mobile app creation.",
@@ -95,7 +95,7 @@
     "footer_contact": {
       "address": "Bogor 16139, West Java, Indonesia",
       "phone": "+62 8111804436",
-      "email": "nizarid04@gmail.com"
+      "email": "muhamadnizar.work@gmail.com"
     },
     "footer_help_links": [
       {
@@ -104,7 +104,7 @@
       },
       {
         "name": "Email",
-        "url": "mailto:nizarid04@gmail.com"
+        "url": "mailto:muhamadnizar.work@gmail.com"
       }
     ],
     "services": {
