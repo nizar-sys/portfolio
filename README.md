@@ -28,7 +28,7 @@ In this portfolio, you'll find a showcase of my skills through various projects 
 
 Feel free to connect with me for any inquiries or project collaborations. You can reach me at:
 
-- **Email**: [nizarid04@gmail.com](mailto:nizarid04@gmail.com)
+- **Email**: [muhamadnizar.work@gmail.com](mailto:muhamadnizar.work@gmail.com)
 - **LinkedIn**: [LinkedIn Profile](https://linkedin.com/in/emnizaar)
 - **Twitter**: [@jokiicodev2](https://twitter.com/jokiicodev2)
 
